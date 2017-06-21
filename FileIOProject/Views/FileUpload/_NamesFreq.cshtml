@@ -1,0 +1,24 @@
+﻿@model List<FileIOProject.Models.NamesFrequencyViewModel>
+
+<div class="form-group">
+    <h2>Frequency of Names</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th><th>Frequency</th>
+        </tr>        
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.FirstOrLastName</td>
+                <td>@item.Frequency</td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>

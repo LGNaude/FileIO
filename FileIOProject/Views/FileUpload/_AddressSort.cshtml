@@ -1,0 +1,23 @@
+﻿@model List<FileIOProject.Models.AddressSortedViewModel>
+
+<div class="form-group">
+    <h2>StreetNames sorted</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>StreetName</th>            
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.StreetName</td>                
+            </tr>
+        }
+
+
+    </tbody>
+</table>
