@@ -8,7 +8,7 @@ using System.Data;
 namespace FileIOProject.Repository
 {
     /// <summary>
-    /// This repository class is used to demonstrate a bit of Sepration of Concerns.
+    /// This repository class is used to demonstrate a bit of Seperation of Concerns.
     /// It takes the load and complexity off from the Controller and do the main processing here.
     /// Typically this is where the call to the DAL will go out for data persistence
     /// It's good practice to implement MemeoryCache provider here as some data can be cached for use throughout the 
