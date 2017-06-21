@@ -41,7 +41,6 @@ namespace FileIOProject.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 if (upload != null && upload.ContentLength > 0)
                 {
 

@@ -45,9 +45,9 @@ namespace FileIOProject.Tests.Controllers
             
 
             // Do 1 or more Asserts here...
-            Assert.AreEqual(6, listNamesFrequencyViewModel.Count);
-            Assert.AreEqual("Brown", listNamesFrequencyViewModel.ToArray()[0].FirstOrLastName);
-            Assert.AreEqual(1, listNamesFrequencyViewModel.ToArray()[0].Frequency);
+            Assert.AreEqual(9, listNamesFrequencyViewModel.Count);
+            Assert.AreEqual("James", listNamesFrequencyViewModel.ToArray()[0].FirstOrLastName);
+            Assert.AreEqual(3, listNamesFrequencyViewModel.ToArray()[0].Frequency);
         }
 
         [TestMethod]
@@ -64,7 +64,7 @@ namespace FileIOProject.Tests.Controllers
             listAddressSortedViewModel = fileUploadRepository.GetAddressSorted(dummyDT);
 
             // Do 1 or more Asserts here...
-            Assert.AreEqual(3, listAddressSortedViewModel.Count);
+            Assert.AreEqual(8, listAddressSortedViewModel.Count);
             Assert.AreEqual("65, Ambling Way", listAddressSortedViewModel.ToArray()[0].StreetName);
         }
 
